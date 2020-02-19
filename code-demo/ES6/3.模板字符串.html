@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // let message = `
+        //         <ul>
+        //             <li>1</li>
+        //             <li>2</li>
+        //         </ul>      
+        // `.trim();
+        // console.log(message);
+
+
+        let arr = [{value: 2},{value: 2}];
+        let message = `
+                <ul>
+                    ${arr.map((item) => {
+                        return `
+                            <li>${item.value}</li>
+                        `
+                    })}
+                </ul>
+        `;
+        console.log(message);
+
+
+
+
+        // 在模板字符串中，空格、缩进、换行都会被保留：
+        // 模板字符串支持嵌入变量，只需要将变量名写在 ${} 之中，其实不止变量，任意的 JavaScript 表达式都是可以的：
+    </script>
+</body>
+</html>

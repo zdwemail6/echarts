@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //三点运算符，将一个数组转为用逗号分隔的参数序列
+        // console.log(...[1, 2, 3]) //1 2 3
+        // console.log(1, ...[2, 3, 4], 5) //1 2 3 4 5
+        // [...document.querySelectorAll('div')] 无法复现
+
+        //ES5的写法
+        // var arr1 = [0, 1, 2];
+        // var arr2 = [3, 4, 5];
+        // Array.prototype.push.apply(arr1, arr2);
+
+        //ES6的写法
+        // let arr1 = [0, 1, 2];
+        // let arr2 = [3, 4, 5];
+        // arr1.push(...arr2);
+        // console.log(arr1);
+
+        //数组的复制
+        // const a1 = [1, 2];
+        // //写法一
+        // const a2 = [...a1];
+        // //写法二
+        // const [...a2] = a1;
+
+        //合并数组
+        // const arr1 = ['a', 'b'];
+        // const arr2 = ['c'];
+        // const arr3 = ['d', 'e'];
+
+        //ES5 的合并数组
+        // arr1.concat(arr2, arr3);
+
+        //ES6 的合并数组
+        // console.log([...arr1, ...arr2, ...arr3]);
+
+        // 与解构赋值结合
+        const [first, ...rest] = [1, 2, 3, 4, 5];
+        first // 1
+        rest // [2, 3, 4, 5,]       
+
+        const [first, ...rest] = [];
+        first // undefined 
+        rest // []
+
+        const [first, ...rest] = ["foo"];
+        first // "foo"
+        rest // []
+        //注意：如果将扩展运算符用于数组赋值，只能放在参数的最后一位，否则会报错
+        const [...butLast, last] = [1, 2, 3, 4, 5]; //报错
+
+        //扩展运算符可以将字符串转为真正的数组
+        // [...'hello']
+        // ["h", "e", "l", "l", "o"]
+
+    </script>
+</body>
+</html>

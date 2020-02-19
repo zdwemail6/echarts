@@ -1,0 +1,587 @@
+@charset "utf-8";
+/**
+* @version:	 		    2019.11.23
+* @createTime: 	 		2019.11.23
+* @updateTime: 			2019.11.23
+* @author:				zhanglj
+* @name:  				reset
+* @description          reset.css ，这里是重置浏览器你样式的css
+*/
+body {
+    background: #fdfdff;
+    letter-spacing: 1px;
+}
+
+h3.h3-title {
+    font-size: 18px;
+    line-height: 28px;
+    color: #1d1d1d;
+}
+
+h5.h5-title {
+    margin-top: 2px;
+    font-size: 12px;
+    line-height: 18px;
+    color: #909090;
+}
+
+.fd-module-1170 {
+    width: 1170px;
+    margin: 0 auto;
+    padding: 35px 0px 60px 0;
+}
+
+/*--banner---*/
+
+.fd-banner {
+    width: 100%;
+    height: 400px;
+    background: url("../images/banner.jpg") no-repeat center top;
+}
+
+.fd-banner-position {
+    margin: 0 auto;
+    padding-top: 122px;
+    width: 100%;
+    max-width: 1430px;
+}
+
+.fd-banner-title {
+    padding-left: 23px;
+    height: 77px;
+    border-left: 7px solid #26a2df;
+}
+
+.fd-banner-title h2 {
+    color: #fff;
+    font: 46px/50px 'microsoft yahei';
+}
+
+.fd-banner-title h3 {
+    margin-top: 10px;
+    color: #fff;
+    letter-spacing: 3px;
+    font: 18px/20px 'microsoft yahei';
+    opacity: 0.8;
+}
+
+.fd-banner-content {
+    margin-top: 30px;
+    padding-left: 28px;
+    color: #fff;
+    font: 18px/33px 'microsoft yahei';
+}
+
+.fd-index {
+    margin: 0 auto;
+    width: 1168px;
+    padding: 40px 0 40px 0;
+}
+/*---index-tab---*/
+
+.fd-index-tab {
+
+}
+
+.fd-index-tab li {
+    position: relative;
+    float: left;
+    padding-left: 68px;
+    padding-top: 14px;
+    width: 160px;
+    height: 80px;
+    border: 1px solid #e9e9e9;
+    box-sizing: border-box;
+    border-radius: 3px;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.fd-index-tab li:not(:last-child) {
+    margin-right: 8px;
+}
+
+.fd-index-tab li .icon {
+    position: absolute;
+    top: 16px;
+    left: 11px;
+    width: 48px;
+    height: 48px;
+    background-repeat: no-repeat;
+    background-image: url("../images/icon.png");
+}
+
+.fd-index-tab li.dzjz .icon {
+    background-position: 0 0;
+}
+
+.fd-index-tab li.zjfx .icon {
+    background-position: 0 -48px;
+}
+
+.fd-index-tab li.wszz .icon {
+    background-position: 0 -96px;
+}
+
+.fd-index-tab li.ywhc .icon {
+    background-position: 0 -144px;
+}
+
+.fd-index-tab li.flzk .icon {
+    background-position: 0 -192px;
+}
+
+.fd-index-tab li.lxfx .icon {
+    background-position: 0 -240px;
+}
+
+.fd-index-tab li.sthx .icon {
+    background-position: 0 -288px;
+}
+
+.fd-index-tab li h3 {
+    font-size: 18px;
+    color: #1d1d1d;
+    line-height: 28px;
+}
+
+.fd-index-tab li a {
+    margin-top: 2px;
+    font-size: 14px;
+    color: #afb7c6;
+    line-height: 22px;
+}
+
+.fd-index-tab li.current {
+    background: linear-gradient(top, #0aa8ee, #0f79f2);
+    background: -ms-linear-gradient(top, #0aa8ee, #0f79f2);
+    background: -webkit-linear-gradient(top, #0aa8ee, #0f79f2);
+    background: -moz-linear-gradient(top, #0aa8ee, #0f79f2);
+}
+
+.fd-index-tab li.current .icon {
+    background-position-x: -48px;
+}
+
+.fd-index-tab li.current h3,.fd-index-tab li.current a {
+    color: #fff;
+}
+
+.fd-index-tab li.current:after {
+    position: absolute;
+    display: block;
+    clear: both;
+    content: '';
+    bottom: -18px;
+    width: 0;
+    border-top: 9px solid #0f79f2;
+    border-left: 9px solid transparent;
+    border-right: 9px solid transparent;
+    border-bottom: 9px solid transparent;
+}
+
+.fd-all-detail {
+    position: relative;
+    margin-top: 50px;
+    height: 350px;
+    border-radius: 3px;
+    background: #f4f4f4;
+}
+
+.fd-all-detail .pic {
+    width: 470px;
+    height: 100%;
+    float: left;
+    border-radius: 3px 0 0 3px;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+
+.fd-all-detail .pic.pic-dzjz {
+    background-image: url("../images/dzjz-pic.jpg")
+}
+
+.fd-all-detail .pic.pic-zjfx {
+    background-image: url("../images/zjfx-pic.jpg")
+}
+
+.fd-all-detail .pic.pic-wszz {
+    background-image: url("../images/wszz-pic.jpg")
+}
+
+.fd-all-detail .pic.pic-ywhc {
+    background-image: url("../images/ywhc-pic.jpg")
+}
+
+.fd-all-detail .pic.pic-flzk {
+    background-image: url("../images/flzk-pic.jpg")
+}
+
+.fd-all-detail .pic.pic-lxfx {
+    background-image: url("../images/lxfx-pic.jpg")
+}
+
+.fd-all-detail .pic.pic-sthx {
+    background-image: url("../images/sthx-pic.jpg")
+}
+.fd-all-detail .con {
+    padding-left: 515px;
+    padding-top: 45px;
+    padding-right: 40px;
+}
+
+.fd-all-detail .con p {
+    margin-top: 34px;
+    font-size: 14px;
+    line-height: 30px;
+    color: #454545;
+}
+
+.fd-all-detail .operate {
+    position: absolute;
+    left: 515px;
+    bottom: 0;
+}
+
+.fd-all-detail .operate a {
+    margin-right: 30px;
+}
+
+.fd-index-production {
+    margin-top: 57px;
+}
+
+.fd-title {
+    text-align: center;
+}
+
+.fd-pro-pic {
+    padding: 26px 0px 40px 0;
+    text-align: center;
+}
+
+.fd-index-case {
+    margin-bottom: 100px;
+    padding-top: 35px;
+    width: 100%;
+    height: 390px;
+    background: #f4f4f4;
+}
+
+.fd-second-nav {
+    font-size: 18px;
+    line-height: 28px;
+}
+
+.fd-second .fd-all-detail {
+    margin-top: 38px;
+    height: 400px;
+    background-color: transparent;
+}
+
+.fd-second .fd-all-detail .con {
+    padding-top: 35px;
+}
+
+a.fd-btn {
+    display: inline-block;
+    padding: 0 33px;
+    height: 35px;
+    line-height: 33px;
+    font-size: 14px;
+    border: 1px solid transparent;
+    text-decoration: none;
+}
+
+a.fd-btn-blue {
+    color: #ffffff;
+    background: #0f7bf2;
+    border-color: #f2f2f2;
+}
+
+a.fd-btn-line {
+    color: #0f7bf2;
+    background: transparent;
+    border-color: #0f7bf2;
+}
+
+.fd-module-bg-gray {
+    background: #f1f6f9;
+}
+
+.fd-title-circle {
+    position: relative;
+    padding-left: 16px;
+}
+
+.fd-title-circle:after {
+    position: absolute;
+    left: 0;
+    top: 11px;
+    display: block;
+    clear: both;
+    content: '';
+    width: 6px;
+    height: 6px;
+    border-radius: 3px;
+    background: #0f7bf2;
+}
+
+.fd-tab-info {
+    margin-top: 45px;
+}
+
+.fd-tab-info li {
+    float: left;
+    width: 376px;
+    height: 415px;
+    background-color: #fff;
+    background-repeat: no-repeat;
+    border-radius: 20px 20px 0 0;
+}
+
+.fd-tab-info li:not(:last-child) {
+    margin-right: 18px;
+}
+
+.fd-tab-info li.info-01 {
+    background-image: url("../images/til-01.jpg");
+}
+
+.fd-tab-info li.info-02 {
+    background-image: url("../images/til-02.jpg");
+}
+
+.fd-tab-info li.info-03 {
+    background-image: url("../images/til-03.jpg");
+}
+
+.fd-tab-info li h3 {
+    height: 140px;
+    line-height: 140px;
+    text-align: center;
+    color: #ffffff;
+    font-size: 18px;
+}
+
+.fd-tab-info li p {
+    padding: 17px 35px;
+    font-size: 14px;
+    line-height: 30px;
+    color: #454545;
+}
+
+.fd-bottom-box-01 {
+    margin-top: 35px;
+    padding: 18px 0;
+    background: #f1f6f9;
+}
+
+.fd-box-li {
+    float: left;
+    padding-top: 30px;
+    padding-left: 117px;
+    width: 50%;
+    box-sizing: border-box;
+}
+
+.box-all {
+    width: 88%;
+}
+
+.fd-box-li:not(:first-child) {
+    border-left: 1px dashed #cdd6db;
+}
+
+.fd-box-li-list {
+    padding-left: 16px;
+    padding-top: 40px;
+    min-height: 150px;
+    color: #454545;
+    line-height: 30px;
+    font-size: 14px;
+}
+
+.fd-bottom-box-02 {
+    margin-top: 67px;
+    min-height: 300px;
+    padding-bottom: 35px;
+    background: url("../images/bot-bg.jpg") no-repeat right top;
+}
+
+.fd-bottom-box-02 .fd-title-circle {
+    margin: 22px 0 0 117px;
+}
+
+.fd-bot-detail {
+    padding: 25px 0 25px 130px;
+    margin-top: 35px;
+    width: 794px;
+    line-height: 30px;
+    color: #fff;
+    font-size: 14px;
+    background: #0f7bf2;
+}
+
+.fd-second-foot {
+    height: 80px;
+    line-height: 80px;
+    font-size: 16px;
+    color: #454545;
+    text-align: center;
+    background: #f1f6f9;
+}
+
+.fd-info {
+    padding: 0 60px 0 117px;
+}
+
+.fd-info p {
+    padding-top: 24px;
+    padding-left: 16px;
+    font-size: 16px;
+    line-height: 48px;
+}
+
+/*---case--*/
+
+.fd-case-list {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 20px 0px 20px 0;
+}
+
+.index_bg {
+    height:250px;
+    display:block;
+    clear:both;
+    position:relative;
+}
+.pre_btn,.next_btn {
+    width:26px;
+    height:35px;
+    position:absolute;
+    top:100px;
+    cursor:pointer;
+    z-index: 99;
+}
+.pre_btn {
+    left:-25px;
+    background:url(../images/l_bg.png) no-repeat 0 0;
+}
+
+.next_btn {
+    right:-25px;
+    background:url(../images/r_bg.png) no-repeat 0 0;
+}
+
+.btn-disabled {
+    background-position: 0 bottom;
+    cursor: inherit;
+}
+
+.index_nr {
+    width:1200px;
+    height:100%;
+    margin: 0 auto;
+    overflow:hidden;
+    position:relative;
+}
+
+.index_nr .index {
+    height:100%;
+    width:10000px;
+    position:absolute;
+    left:0px;
+    top:0px;
+}
+.index_nr .index li {
+    float:left;
+    height:100%;
+    width:300px;
+    padding: 0 15px;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+.index_nr .index li .list {
+    width: 100%;
+    height: 242px;
+    border: 1px solid #f2f2f2;
+    border-radius: 4px;
+    background: #fff;
+}
+.list img {
+    width: 100%;
+    /* height: 178px; */
+    border-radius: 4px 4px 0 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.list p {
+    margin-top: 15px;
+    padding-left: 15px;
+    font-size: 18px;
+    line-height: 28px;
+}
+
+
+.fd-openmask{
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    visibility: visible;
+}
+.fd-closemask {
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    visibility: hidden;
+}
+.fd-mask-img{
+    width: 90%;
+    height: 90%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+.fd-mask-img .fd-mask-close{
+    position: absolute;
+    top: -30px;
+    right: 0px;
+    font-size: 32px;
+    color: rgba(255, 255, 255, 1);
+    cursor: pointer;
+}
+
+.fd-mask-img .fd-mask-images{
+    max-width: 90%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+.list .fd-list-box{
+    width: 100%;
+    height: 178px;
+    position: relative;
+    background-color:#d9dee3;
+    overflow: hidden;
+}

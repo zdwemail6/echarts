@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // var情况下
+        // var a= [];
+        // for (var i = 0; i < 10; i++){
+        //     a[i] = function () {
+        //         console.log(i);
+        //     };
+        // }
+        // a[6](); 10
+
+        // let情况下
+        // var a = [];
+        // for (let i = 0; i < 10; i++){
+        //     a[i] = function () {
+        //         console.log (i) 
+        //     };
+        // }
+        // a[6](); 6
+
+
+        // 暂时性死区    
+        // var tmp = 123;
+
+        // if (true) {
+        //     tmp = 'abc'; // ReferenceError
+        //     let tmp;
+        // }
+
+        var tmp = new Date();
+
+        function f() {
+            console.log(tmp);
+            if (false) {
+                var tmp = 'hello world';
+            }
+        }
+
+        f(); // undefined
+
+            // ES6 新增了let命令，用来声明变量。它的用法类似于var，但是所声明的变量，只在let命令所在的代码块内有效。
+
+            // let不存在变量提升
+            // var命令会发生“变量提升”现象，即变量可以在声明之前使用，值为undefined
+            // 而如果用let声明就会抛出错误
+
+            // 暂时性死区
+            // 在代码块内，使用let命令声明变量之前，该变量都是不可用的，这在语法上称之为“暂时性死区”
+            // 有了“暂时性死区后”就意味着typeof不在是一个百分百安全的操作
+
+            // 不允许重复声明
+            // let不允许在相同作用于内，重复声明同一个变量
+    </script>
+</body>
+
+</html>
